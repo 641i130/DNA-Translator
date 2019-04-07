@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>DNA Translator</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <script>
+
+    $(document).on('keypress',function(e) {
+    if(e.which == 13) {
+        alert('You pressed enter!');
+    }
+    });
+    var DNA;
+    var mRNA;
+    var tRNA;
+
+    function
+
+  </script>
+  <style media="screen">
+    body {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        background-color: #1f262b;
+        color: #969696;
+    }
+    h1 {
+      font-size: 500%;
+    }
+
+    #box {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      border: none;
+      background-color: #463460;
+      color: #ab8adb;
+      font-size: 20px;
+      overflow: auto;
+      border-radius: 20px;
+      margin-left: 20%;
+      margin-right: 20%;
+      height: 40px;
+    }
+
+    .output p{
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+      border: none;
+      background-color: #463460;
+      color: #ab8adb;
+      font-size: 20px;
+      overflow: auto;
+      border-radius: 20px;
+      margin-left: 45%;
+      margin-right: 45%;
+      vertical-align:middle;
+      padding-top: 14px;
+      padding-bottom: 0px;
+      height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h1>DNA TRANSLATOR</h1>
+  <input id="box" type="textbox" placeholder="DNA"></input>
+  <div class="output">
+    <p>AUG</p>
+  </div>
+</body>
+</html>
