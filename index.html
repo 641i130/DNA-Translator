@@ -14,6 +14,15 @@
         color: #969696;
     }
 
+		body {
+		opacity: 1;
+		transition: 1s opacity;
+		}
+		body.fade-out {
+				opacity: 0;
+				transition: none;
+		}
+
 		a {
 			color: #969696;
 		}
@@ -95,6 +104,15 @@
   </style>
 </head>
 <body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+
+	document.body.className += ' fade-out';
+	$(function() {
+			$('body').removeClass('fade-out');
+	});
+
+	</script>
   <h1>DNA TRANSLATOR</h1>
 	<h4>Made by <a href="https://github.com/641i130">641i130</a></h4>
 	<!-- Examples -->
