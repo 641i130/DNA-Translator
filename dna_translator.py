@@ -1,5 +1,6 @@
 # DNA Translator
 DNA = input("Input some DNA to translate: ")
+# Add if the letters input aren't TAGC
 mRNA = []
 tRNA = []
 DNA_for = "|".join([DNA[i:i+3] for i in range(0, len(DNA), 3)])

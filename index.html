@@ -5,32 +5,28 @@
 	<meta name="viewport" content="width=device-width">
 	<title>DNA Translator</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script>
-
-    $(document).on('keypress',function(e) {
-    if(e.which == 13) {
-        alert('You pressed enter!');
-    }
-    });
-    var DNA;
-    var mRNA;
-    var tRNA;
-
-    function
-
-  </script>
-  <style media="screen">
+	<script type="text/javascript" src="./index.js"></script>
+	<style media="screen">
     body {
         font-family: 'Roboto', sans-serif;
         text-align: center;
         background-color: #1f262b;
         color: #969696;
     }
+
+		a {
+			color: #969696;
+		}
+
+		a:hover {
+		  color: #00f234;
+		}
     h1 {
-      font-size: 500%;
-    }
+      font-size: 6em;
+			margin-bottom: inherit;
+		}
 
-    #box {
+    #DNA {
       font-family: 'Roboto', sans-serif;
       text-align: center;
       border: none;
@@ -39,35 +35,82 @@
       font-size: 20px;
       overflow: auto;
       border-radius: 20px;
-      margin-left: 20%;
-      margin-right: 20%;
-      height: 40px;
+			margin: 8px 20% 8px 20%;
+			padding: 9px;
     }
 
-    .output p{
+		#emRNA {
+			font-weight: bold;
       font-family: 'Roboto', sans-serif;
-      text-align: center;
       border: none;
-      background-color: #463460;
-      color: #ab8adb;
-      font-size: 20px;
-      overflow: auto;
+      background-color: #5ca8a5;
+      color: #8dd6ce;
+			font-size: 20px;
+			border-radius: 20px;
+			margin: 10px 40% 5px 40%;
+			vertical-align:middle;
+			padding: .8em;
+    }
+
+		#etRNA {
+			font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      border: none;
+      background-color: #5177a5;
+      color: #6fa3e2;
+			font-size: 20px;
       border-radius: 20px;
-      margin-left: 45%;
-      margin-right: 45%;
+			margin: 10px 40% 5px 40%;
       vertical-align:middle;
-      padding-top: 14px;
-      padding-bottom: 0px;
-      height: 40px;
+			padding: .8em;
+    }
+
+		#mRNA {
+			display: inline-block;
+			font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      border: none;
+      background-color: #5ca8a5;
+      color: #8dd6ce;
+      font-size: 20px;
+      border-radius: 20px;
+			margin: 10px 5px 5px 10px;
+      vertical-align:middle;
+			padding: .8em;
+    }
+
+		#tRNA {
+			display: inline-block;
+			font-weight: bold;
+      font-family: 'Roboto', sans-serif;
+      border: none;
+      background-color: #5177a5;
+      color: #6fa3e2;
+			font-size: 20px;
+      border-radius: 20px;
+			margin: 10px 5px 5px 10px;
+      vertical-align:middle;
+			padding: .8em;
     }
   </style>
 </head>
 <body>
   <h1>DNA TRANSLATOR</h1>
-  <input id="box" type="textbox" placeholder="DNA"></input>
-  <div class="output">
-    <!-- MAKE THESE INLINE -->
-    <p>AUG</p><p>AUG</p><p>AUG</p>
+	<h4>Made by <a href="https://github.com/641i130">641i130</a></h4>
+	<!-- Examples -->
+	<h3>[Color Examples]</h1>
+	<div class="examples">
+		<p id="emRNA">mRNA</p>
+		<p id="etRNA">tRNA</p>
+	</div>
+	<form action="#">
+	   <input onClick="clean();" id="DNA" type="textbox" placeholder="DNA" name="txt" onkeypress="handle(event)"></input>
+	</form>
+	<div class="mRNA">
+    <!-- <span>AUG</span> -->
   </div>
+	<div class="tRNA">
+		<!-- <span>AUG</span> -->
+	</div>
 </body>
 </html>
