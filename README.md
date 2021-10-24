@@ -1,5 +1,5 @@
 # DNA Translator
-## Created by, Galileo Pierson
+## Created by, 641i130
 
 Originally coded in Python 3.
 
